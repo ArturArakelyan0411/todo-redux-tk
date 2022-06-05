@@ -1,0 +1,43 @@
+.todo {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 10px;
+  border: 1.5px solid #000000;
+  border-radius: 3px;
+  margin-bottom: 10px;
+}
+.todo-title {
+  width: 100%;
+  line-break: anywhere;
+  margin-top: 0;
+  cursor: pointer;
+  user-select: none;
+}
+.todo-title, .todo-input {
+  min-height: 21px;
+  margin-bottom: 16px;
+}
+.todo-input {
+  width: 100%;
+}
+.todo-done .todo-title {
+  text-decoration: line-through;
+}
+.todo-actions {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.todo-action {
+  width: 20%;
+}
+.todo-action:not(:last-child) {
+  margin-right: 10px;
+}
+.todo-date {
+  margin-bottom: 0;
+}
